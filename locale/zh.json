@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Packdeck · 本地程序管理",
+    "description": "统一管理本机全部包管理器：winget 应用、npm/pnpm/bun/yarn 全局包、pip/uv/cargo/gem/go/dotnet 工具链，以及 VS Code/PinK 等编辑器扩展。查看版本、检查更新、安装与卸载，并把正在运行的进程绑定到对应程序。"
+  }
+}

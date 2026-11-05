@@ -1,0 +1,11 @@
+# Build output of native/build.ps1 (regenerated on demand from the .cs source)
+native/*.exe
+
+# npm publish artifacts
+*.tgz
+
+# local scratch
+.tmp-bench/
+.probe/
+*.log
+node_modules/

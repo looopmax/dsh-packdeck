@@ -1,0 +1,66 @@
+{
+  "name": "dsh-packdeck",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Packdeck — manage every local package manager (winget, npm, pnpm, bun, yarn, pip, uv, cargo, gem, go, dotnet, editor extensions) with process binding.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "package-manager",
+    "winget",
+    "npm",
+    "pnpm",
+    "bun",
+    "pip",
+    "cargo"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./entry.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "entry.js",
+    "lib/*.js",
+    "tools/*.mjs",
+    "tools/*.ps1",
+    "native/*.cs",
+    "native/*.ps1",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "docs/CONTRACT.md",
+    "LICENSE",
+    ".gitignore"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/looopmax/dsh-packdeck.git"
+  },
+  "homepage": "https://github.com/looopmax/dsh-packdeck#readme",
+  "bugs": {
+    "url": "https://github.com/looopmax/dsh-packdeck/issues"
+  },
+  "author": "looopmax",
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Packdeck",
+    "description": "Manage every package manager on this machine: winget apps, npm/pnpm/bun/yarn global packages, pip/uv/cargo/gem/go/dotnet toolchains, and VS Code/PinK editor extensions. Check versions and updates, install and uninstall, and bind running processes to the program that owns them."
+  }
+}
