@@ -14,11 +14,10 @@ winget 应用，Node.js / Python / Rust / Go / Ruby / .NET 的全局包，以及
 ## 快速开始
 
 ```powershell
-npm install -g dsh-packdeck           # 或直接引用 tarball
-plugin_manager install_bundle target=dsh-packdeck
+plugin_manager install_bundle target=github:looopmax/dsh-packdeck
 ```
 
-装好后左侧栏出现 **Packdeck** 图标，点开即是面板。详见[安装](#安装)。
+装好后左侧栏出现 **Packdeck** 图标，点开即是面板。其他安装方式见[安装](#安装)。
 
 ## 平台要求
 
@@ -54,10 +53,13 @@ plugin_manager install_bundle target=dsh-packdeck
 包名 `dsh-packdeck`，产物是一个标准 npm tarball（46 个文件，约 178 KB，无运行时依赖）。
 
 ```powershell
+# 推荐：直接从 GitHub 安装（无需 npm 账号，全网可访问）
+plugin_manager install_bundle target=github:looopmax/dsh-packdeck
+
 # 从本地目录（开发用，pnpm link 进 profile）
 plugin_manager install_bundle target=C:\Users\Administrator\Code\SUD-GLOBAL\plugins\dsh-package-manager
 
-# 从打包产物（等同于用户从 registry 安装）
+# 从打包产物
 npm pack
 plugin_manager install_bundle target=<绝对路径>\dsh-packdeck-1.0.0.tgz
 ```
